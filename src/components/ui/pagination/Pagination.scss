@@ -1,0 +1,64 @@
+.pagination {
+  font-size: 10pt;
+  font-weight: 700;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(6px);
+
+  .page-list {
+    padding: 8px;
+    margin: 0;
+
+    .page-item {
+      display: inline-block;
+      margin: 0 4px;
+      vertical-align: top;
+
+      input {
+        max-width: 100px;
+        vertical-align: top;
+      }
+
+      a {
+        cursor: pointer;
+        background-color: #fff;
+        color: rgb(79 70 229);
+        box-shadow: 0 0 0 1px #eee;
+        border-radius: 6px;
+        display: block;
+        padding: 6px 12px;
+        min-width: 16px;
+        text-decoration: none;
+        &:hover {
+          box-shadow: 0 0 0 1px rgb(196 181 253);
+        }
+
+        svg {
+          vertical-align: bottom;
+          font-size: 18px;
+        }
+      }
+      &.page-item-active {
+        a {
+          cursor: default;
+          color: #fff;
+          background-color: rgb(79 70 229);
+          box-shadow: 0 0 0 1px rgb(79 70 229);
+        }
+      }
+      &.page-item-disabled {
+        a {
+          cursor: default;
+          opacity: 0.5;
+          background-color: #fff ;
+          color: rgb(79 70 229) ;
+          box-shadow: 0 0 0 1px #eee;
+        }
+      }
+    }
+  }
+}

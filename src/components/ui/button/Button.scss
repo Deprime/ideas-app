@@ -1,0 +1,39 @@
+.ui-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 0 2px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 100%;
+  text-align: center;
+
+  * {
+    vertical-align: top;
+  }
+
+  &--default {
+    background-color: #fff;
+    box-shadow: 0 0 0 1px #ddd;
+    &:hover {
+      box-shadow: 0 0 0 1px #bbb;
+    }
+  }
+
+  &--primary {
+    background-color: rgb(79 70 229);
+    color: #fff;
+    &:hover {
+      background-color: rgb(67 56 202);
+    }
+  }
+
+  &--danger {
+    background-color: rgb(251 113 133);
+    color: #fff;
+    &:hover {
+      background-color:  rgb(244 63 94);
+    }
+  }
+}

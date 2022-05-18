@@ -1,0 +1,32 @@
+.app {
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+// Padding & margin helpers
+$base-gutter: 4px;
+
+.full-width {
+  width: 95%;
+}
+
+@for $i from 0 through 10 {
+  .p-#{$i}  {padding:        $base-gutter * $i }
+  .pt-#{$i} {padding-top:    $base-gutter * $i }
+  .pb-#{$i} {padding-bottom: $base-gutter * $i }
+  .pl-#{$i} {padding-left: $base-gutter * $i}
+  .pr-#{$i} {padding-right: $base-gutter * $i}
+
+  .m-#{$i}  {margin:        $base-gutter * $i }
+  .mt-#{$i} {margin-top:    $base-gutter * $i }
+  .mb-#{$i} {margin-bottom: $base-gutter * $i }
+  .ml-#{$i} {margin-left: $base-gutter * $i}
+  .mr-#{$i} {margin-right: $base-gutter * $i}
+}

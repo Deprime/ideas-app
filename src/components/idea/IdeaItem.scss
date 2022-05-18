@@ -1,0 +1,74 @@
+.idea-item {
+  border-radius: 10px;
+  margin: 0 0 20px 0;
+  box-shadow: 0 10px 20px 0 #eee, 0 5px 10px 0 #eee;
+  display: flex;
+  width: 44%;
+  position: relative;
+
+  &.idea-item-deleted {
+    opacity: 0.4;
+  }
+
+  .author-avatar {
+    padding: 4px;
+    img {
+      border-radius: 4em;
+      width: auto;
+      height: 90px;
+    }
+  }
+  .author-name {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+    .author-email {
+      font-weight: 500;
+      color: #777;
+
+    }
+  }
+  .entry {
+    border-left: 4px solid rgb(224 231 255);
+    padding: 0 20px;
+    width: 80%;
+    .content {
+      padding: 0 0 8px 0;
+    }
+  }
+  .tools {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 5px;
+      visibility: hidden;
+      // display: none;
+      opacity: 0;
+
+      -webkit-transition: all 250ms ease-in;
+      -moz-transition: all 250ms ease-in;
+      -ms-transition: all 250ms ease-in;
+      -o-transition: all 250ms ease-in;
+      transition: all 250ms ease-in;
+
+      .act {
+          margin: 4px 8px;
+          cursor: pointer;
+          &.act-remove {
+              color:  rgb(244 63 94);
+          }
+      }
+  }
+
+  &:hover {
+      .tools {
+          opacity: 1;
+          visibility: visible;
+      }
+  }
+  .details {
+    font-size: 0.75em;
+    opacity: 0.6;
+  }
+}
